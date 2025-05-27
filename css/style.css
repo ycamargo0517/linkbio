@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    width: 300px;
+    min-height: 300px;
+    position: relative;
+    border: 1px solid black;
+    border-radius: 1px solid black;
+    padding: 76px 16px 16px 16px;
+    border-radius: 16px;
+}
+.perfil{
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    translate: -50% -50%;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 1px solid black;
+    
+}
+.perfil .foto,
+.perfil .logo {
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    backface-visibility: hidden;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform.8s;
+    transform-style: preserve-3d;
+
+
+    img{
+        width: 100%;
+        display: block;
+    }
+
+}
+.foto{
+    background-color: blue;
+}
+.logo{ 
+    background-color: blue;
+    transform: rotateY(180deg);
+}
+.perfil:hover .foto{
+    transform:rotateY(180deg) ;
+}
+.perfil:hover .logo{
+    transform:rotateY(360deg) 
+}
+ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+li{
+    width: 100%;
+    list-style-type: none;
+}
+a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 32px;
+    border: 1px solid red;
+    border-radius: 8px;
+    background-color: blue;
+    transition:  .5s;
+    color: white;
+    text-decoration: none;
+}
+ a:hover{
+        background-color: #fff;
+        color: blue;
+    }
