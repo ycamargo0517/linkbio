@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Cormorant+SC:wght@300;400;500;600;700&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Cormorant SC", serif;
 }
 body{
     width: 100%;
@@ -9,15 +11,20 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(../assets/bg-lua.jpg);
+    background-position: center;
+    block-size: cover;
 }
 main{
     width: 300px;
     min-height: 300px;
     position: relative;
-    border: 1px solid black;
+    border: 1px solid #fafafa;
     border-radius: 1px solid black;
     padding: 76px 16px 16px 16px;
     border-radius: 16px;
+    background-color: #fafafa40;
+    backdrop-filter: blur(4px);
 }
 .perfil{
     width: 120px;
@@ -28,7 +35,8 @@ main{
     translate: -50% -50%;
     overflow: hidden;
     border-radius: 50%;
-    border: 1px solid black;
+    border: 2px solid #fafafa ;
+    background-color:#fafafa;
     
 }
 .perfil .foto,
@@ -78,14 +86,25 @@ a{
     align-items: center;
     width: 100%;
     height: 32px;
-    border: 1px solid red;
+    border: 1px solid #fafafa;
     border-radius: 8px;
-    background-color: blue;
+    background-color: gray;
     transition:  .5s;
     color: white;
     text-decoration: none;
 }
  a:hover{
         background-color: #fff;
-        color: blue;
+        color: gray;
+    }
+    h1{
+        font-family: "Cinzel", serif;
+        text-align: center;
+        color: #fafafa;
+    }
+    p{
+        text-align: center;
+        margin: 16px 0;
+        color: #fafafa;
+        font-size: 18px;
     }
